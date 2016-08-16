@@ -31,3 +31,17 @@ being merged and thier most recent commin commit. All lines that we're removed s
 included in the merge, all lines that were added, modified or the same in comparison to the two merging branch along
 with their common commit with be included in the new merged branch. The diagram representation indicates that the
 merged branch contains all the previous commits from both branches all the way back to their shared commit.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Using automatic merging Git will be able to create a new branch that is a product of everything that was modified,
+added or untouched in each individual branch with respect to the commom commit and it's opposing branch. Anything
+removed since the most recent common commit will not be including in the new merge. Auto merging is a quick
+way to merge all obvious changes but can not complete a merge when both branches have made different changegs to
+the same file or line. In this case the user will have to manually go through the file(s) that's creating the 
+merging conflict and decide which version of the code will be implemented in the new branch. This allows the user
+to compare both implementations side by side as the file trying to be merged will now contain the code from each
+branch and along with the code from the branch of their most recent common commit. Being able to see what the code
+originally looked like allows the user to isolate the changes made in each branch to make a decision on what should
+be included in the final merged branch. The down side to manually merging is that it is very tidious, and with
+large projects with multiple changes in each branch, manually changing every file can be very time consuming.
