@@ -9,3 +9,8 @@ How is the staging area different from the working directory and the repository?
 The staging area contains all the files that will be committed from the working directory to the repository, files
 can be individually added and removed from the staging area. This allows the programming to makes changes to multuple
 files all at once and the commit them seperately, which in turn could be very helpful in the debugging process.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+To check which files are added to the staging area the command git status is used. If any unwanted files are in the
+staging area they can be removed using the git reset file.name command. 
