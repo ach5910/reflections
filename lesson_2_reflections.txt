@@ -14,3 +14,12 @@ How can you use the staging area to make sure you have one commit per logical ch
 
 To check which files are added to the staging area the command git status is used. If any unwanted files are in the
 staging area they can be removed using the git reset file.name command. 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+When more than one person is working on a prjoect at time, branches can be used to help organize and seperate 
+everyones work until they are ready to be merged.
+
+How do the diagrams help you visualize the branch structure?
+The diagrams help highlight the commit time line for each of the branches and also allows users to identify each
+individual branch. Using the diagram, not only can the numnber of branches be determined but also reachability of
+each branch, that is, the accessability of one branch to another via a common commit.
