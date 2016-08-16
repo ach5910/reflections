@@ -23,3 +23,11 @@ How do the diagrams help you visualize the branch structure?
 The diagrams help highlight the commit time line for each of the branches and also allows users to identify each
 individual branch. Using the diagram, not only can the numnber of branches be determined but also reachability of
 each branch, that is, the accessability of one branch to another via a common commit.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+The branch specified is merged into the branch that is currently being checked-out, and the name of the merged branch
+is the same as what branch was being checked-out prior to the merge. The new branch is a product of the two branches
+being merged and thier most recent commin commit. All lines that we're removed since the previous commit are not
+included in the merge, all lines that were added, modified or the same in comparison to the two merging branch along
+with their common commit with be included in the new merged branch. The diagram representation indicates that the
+merged branch contains all the previous commits from both branches all the way back to their shared commit.
